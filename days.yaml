@@ -1,0 +1,9 @@
+config:
+  useArmyButtDays: false
+  showCompleted: false
+
+entries:
+  - title: Army beats the hell out of Navy
+    date: '2024-12-14'
+  - title: Christmas
+    date: '2024-12-25'

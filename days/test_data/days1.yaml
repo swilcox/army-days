@@ -1,0 +1,9 @@
+config:
+  useArmyButtDays: false
+  showCompleted: false
+
+entries:
+  - title: Item 1
+    date: '2024-12-14'
+  - title: Item 2
+    date: '2024-12-25'
