@@ -5,6 +5,8 @@ import (
 	"os"
 	"testing"
 	"time"
+
+	"github.com/gookit/color"
 )
 
 func TestJsonOutput(t *testing.T) {
@@ -20,6 +22,7 @@ func TestJsonOutput(t *testing.T) {
 }
 
 func TestColorOutput(t *testing.T) {
+	color.ForceOpenColor()
 	testOutputData := []OutputData{
 		{Title: "item -2", Date: time.Date(2024, 1, 8, 0, 0, 0, 0, time.UTC), Days: -5},
 		{Title: "item -1", Date: time.Date(2024, 1, 13, 0, 0, 0, 0, time.UTC), Days: -1},
