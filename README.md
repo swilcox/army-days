@@ -1,3 +1,5 @@
+![github actions status](https://github.com/swilcox/army-days/actions/workflows/go.yml/badge.svg)
+
 # Army Days
 
 ![screenshot](./docs/images/screenshot.png)
