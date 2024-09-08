@@ -65,7 +65,7 @@ func TestDateParser(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			result, err := parseDateString(tt.dateString)
-			if result != tt.expectedDate || (tt.expectedErr == nil && err != nil) || (tt.expectedErr != nil && err == nil) {
+			if result.Sub(tt.expectedDate) != time.Duration(0) || (tt.expectedErr == nil && err != nil) || (tt.expectedErr != nil && err == nil) {
 				t.Errorf("calculateDays() = %v (%v), want %v, %v", result, err, tt.expectedDate, tt.expectedErr)
 			}
 		})
